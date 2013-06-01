@@ -27,7 +27,87 @@
 		D59C4F7F175A0D820059D87D /* WaveSampleProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = D59C4F70175A02E40059D87D /* WaveSampleProvider.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		D59C4F80175A0D820059D87D /* WaveSampleProviderDelegate.h in Sources */ = {isa = PBXBuildFile; fileRef = D59C4F71175A02E40059D87D /* WaveSampleProviderDelegate.h */; };
 		D59C4F87175A0DED0059D87D /* sample.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D59C4F86175A0DED0059D87D /* sample.mp3 */; };
+		D59C5024175A19F00059D87D /* libJSONKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D59C4F97175A16A70059D87D /* libJSONKit.a */; };
+		D59C5025175A19F00059D87D /* libOAuth2Client.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D59C4FE7175A16BB0059D87D /* libOAuth2Client.a */; };
+		D59C5026175A19F00059D87D /* libOHAttributedLabel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D59C501A175A16CD0059D87D /* libOHAttributedLabel.a */; };
+		D59C5027175A19F00059D87D /* libSoundCloudAPI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D59C4F90175A16970059D87D /* libSoundCloudAPI.a */; };
+		D59C5028175A19F00059D87D /* libSoundCloudUI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D59C5021175A16F10059D87D /* libSoundCloudUI.a */; };
+		D59C502F175A19F00059D87D /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D59C5029175A19F00059D87D /* AddressBook.framework */; };
+		D59C5030175A19F00059D87D /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D59C502A175A19F00059D87D /* AddressBookUI.framework */; };
+		D59C5031175A19F00059D87D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D59C502B175A19F00059D87D /* CoreLocation.framework */; };
+		D59C5032175A19F00059D87D /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D59C502C175A19F00059D87D /* CoreText.framework */; };
+		D59C5033175A19F00059D87D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D59C502D175A19F00059D87D /* QuartzCore.framework */; };
+		D59C5034175A19F00059D87D /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D59C502E175A19F00059D87D /* Security.framework */; };
+		D59C5036175A1AAB0059D87D /* SoundCloud.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D59C5035175A1AAB0059D87D /* SoundCloud.bundle */; };
+		D5F60094175A2004000D537C /* RMPSCTracksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5F60092175A2004000D537C /* RMPSCTracksViewController.m */; };
+		D5F60095175A2004000D537C /* RMPSCTracksViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5F60093175A2004000D537C /* RMPSCTracksViewController.xib */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D59C4F8D175A16970059D87D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D59C4F88175A16960059D87D /* SoundCloudAPI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 94535F86123FAFDF00BD668A;
+			remoteInfo = SoundCloudAPI.framework;
+		};
+		D59C4F8F175A16970059D87D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D59C4F88175A16960059D87D /* SoundCloudAPI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = SoundCloudAPI;
+		};
+		D59C4F96175A16A70059D87D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D59C4F91175A16A60059D87D /* JSONKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F6803523148F6D22008A51BA;
+			remoteInfo = libJSONKit;
+		};
+		D59C4F98175A16A70059D87D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D59C4F91175A16A60059D87D /* JSONKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F6AE0202148F825C0004909F;
+			remoteInfo = JSONKit.framework;
+		};
+		D59C4FE4175A16BB0059D87D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D59C4FDF175A16BA0059D87D /* OAuth2Client.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 942FFCD612315E0A00E6C65E;
+			remoteInfo = OAuth2Client.framework;
+		};
+		D59C4FE6175A16BB0059D87D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D59C4FDF175A16BA0059D87D /* OAuth2Client.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = OAuth2Client;
+		};
+		D59C5019175A16CD0059D87D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D59C5015175A16CC0059D87D /* OHAttributedLabel.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F62728FA148F70DF00314599;
+			remoteInfo = OHAttributedLabel;
+		};
+		D59C5020175A16F10059D87D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D59C501B175A16F00059D87D /* SoundCloudUI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F6EF8C6113F929D700B20B40;
+			remoteInfo = libSoundCloudUI;
+		};
+		D59C5022175A16F10059D87D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D59C501B175A16F00059D87D /* SoundCloudUI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F62E0CE5148FB27100BE8F14;
+			remoteInfo = SoundCloudUI.framework;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		D59C4F481759FF260059D87D /* RhythmMoodPic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RhythmMoodPic.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,6 +135,21 @@
 		D59C4F7A175A0AC70059D87D /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		D59C4F7C175A0CD80059D87D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		D59C4F86175A0DED0059D87D /* sample.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sample.mp3; sourceTree = "<group>"; };
+		D59C4F88175A16960059D87D /* SoundCloudAPI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SoundCloudAPI.xcodeproj; path = submodules/CocoaSoundCloudAPI/SoundCloudAPI.xcodeproj; sourceTree = "<group>"; };
+		D59C4F91175A16A60059D87D /* JSONKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JSONKit.xcodeproj; path = submodules/JSONKit/JSONKit.xcodeproj; sourceTree = "<group>"; };
+		D59C4FDF175A16BA0059D87D /* OAuth2Client.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OAuth2Client.xcodeproj; path = submodules/OAuth2Client/OAuth2Client.xcodeproj; sourceTree = "<group>"; };
+		D59C5015175A16CC0059D87D /* OHAttributedLabel.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OHAttributedLabel.xcodeproj; path = submodules/OHAttributedLabel/OHAttributedLabel.xcodeproj; sourceTree = "<group>"; };
+		D59C501B175A16F00059D87D /* SoundCloudUI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SoundCloudUI.xcodeproj; path = submodules/CocoaSoundCloudUI/SoundCloudUI.xcodeproj; sourceTree = "<group>"; };
+		D59C5029175A19F00059D87D /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		D59C502A175A19F00059D87D /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
+		D59C502B175A19F00059D87D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		D59C502C175A19F00059D87D /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		D59C502D175A19F00059D87D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		D59C502E175A19F00059D87D /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		D59C5035175A1AAB0059D87D /* SoundCloud.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = SoundCloud.bundle; path = submodules/CocoaSoundCloudUI/SoundCloud.bundle; sourceTree = "<group>"; };
+		D5F60091175A2004000D537C /* RMPSCTracksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMPSCTracksViewController.h; sourceTree = "<group>"; };
+		D5F60092175A2004000D537C /* RMPSCTracksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMPSCTracksViewController.m; sourceTree = "<group>"; };
+		D5F60093175A2004000D537C /* RMPSCTracksViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RMPSCTracksViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +157,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D59C502F175A19F00059D87D /* AddressBook.framework in Frameworks */,
+				D59C5030175A19F00059D87D /* AddressBookUI.framework in Frameworks */,
+				D59C5031175A19F00059D87D /* CoreLocation.framework in Frameworks */,
+				D59C5032175A19F00059D87D /* CoreText.framework in Frameworks */,
+				D59C5033175A19F00059D87D /* QuartzCore.framework in Frameworks */,
+				D59C5034175A19F00059D87D /* Security.framework in Frameworks */,
+				D59C5024175A19F00059D87D /* libJSONKit.a in Frameworks */,
+				D59C5025175A19F00059D87D /* libOAuth2Client.a in Frameworks */,
+				D59C5026175A19F00059D87D /* libOHAttributedLabel.a in Frameworks */,
+				D59C5027175A19F00059D87D /* libSoundCloudAPI.a in Frameworks */,
+				D59C5028175A19F00059D87D /* libSoundCloudUI.a in Frameworks */,
+				D59C4F501759FF260059D87D /* CoreGraphics.framework in Frameworks */,
 				D59C4F7D175A0CD90059D87D /* AVFoundation.framework in Frameworks */,
 				D59C4F7B175A0AC70059D87D /* MediaPlayer.framework in Frameworks */,
 				D59C4F79175A09C80059D87D /* CoreMedia.framework in Frameworks */,
@@ -69,7 +176,6 @@
 				D59C4F75175A09070059D87D /* CoreAudio.framework in Frameworks */,
 				D59C4F4C1759FF260059D87D /* UIKit.framework in Frameworks */,
 				D59C4F4E1759FF260059D87D /* Foundation.framework in Frameworks */,
-				D59C4F501759FF260059D87D /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,7 +185,13 @@
 		D59C4F3F1759FF260059D87D = {
 			isa = PBXGroup;
 			children = (
+				D59C501B175A16F00059D87D /* SoundCloudUI.xcodeproj */,
+				D59C5015175A16CC0059D87D /* OHAttributedLabel.xcodeproj */,
+				D59C4FDF175A16BA0059D87D /* OAuth2Client.xcodeproj */,
+				D59C4F91175A16A60059D87D /* JSONKit.xcodeproj */,
+				D59C4F88175A16960059D87D /* SoundCloudAPI.xcodeproj */,
 				D59C4F511759FF260059D87D /* RhythmMoodPic */,
+				D59C5037175A1BE20059D87D /* Resources */,
 				D59C4F4A1759FF260059D87D /* Frameworks */,
 				D59C4F491759FF260059D87D /* Products */,
 			);
@@ -96,6 +208,12 @@
 		D59C4F4A1759FF260059D87D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D59C5029175A19F00059D87D /* AddressBook.framework */,
+				D59C502A175A19F00059D87D /* AddressBookUI.framework */,
+				D59C502B175A19F00059D87D /* CoreLocation.framework */,
+				D59C502C175A19F00059D87D /* CoreText.framework */,
+				D59C502D175A19F00059D87D /* QuartzCore.framework */,
+				D59C502E175A19F00059D87D /* Security.framework */,
 				D59C4F7C175A0CD80059D87D /* AVFoundation.framework */,
 				D59C4F7A175A0AC70059D87D /* MediaPlayer.framework */,
 				D59C4F78175A09C80059D87D /* CoreMedia.framework */,
@@ -111,6 +229,7 @@
 		D59C4F511759FF260059D87D /* RhythmMoodPic */ = {
 			isa = PBXGroup;
 			children = (
+				D59C5038175A1BF60059D87D /* SC */,
 				D59C4F6E175A02D40059D87D /* Waveform */,
 				D59C4F5A1759FF260059D87D /* RMPAppDelegate.h */,
 				D59C4F5B1759FF260059D87D /* RMPAppDelegate.m */,
@@ -145,6 +264,68 @@
 				D59C4F71175A02E40059D87D /* WaveSampleProviderDelegate.h */,
 			);
 			name = Waveform;
+			sourceTree = "<group>";
+		};
+		D59C4F89175A16960059D87D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D59C4F8E175A16970059D87D /* SoundCloudAPI.framework */,
+				D59C4F90175A16970059D87D /* libSoundCloudAPI.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D59C4F92175A16A60059D87D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D59C4F97175A16A70059D87D /* libJSONKit.a */,
+				D59C4F99175A16A70059D87D /* JSONKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D59C4FE0175A16BA0059D87D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D59C4FE5175A16BB0059D87D /* OAuth2Client.framework */,
+				D59C4FE7175A16BB0059D87D /* libOAuth2Client.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D59C5016175A16CC0059D87D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D59C501A175A16CD0059D87D /* libOHAttributedLabel.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D59C501C175A16F00059D87D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D59C5021175A16F10059D87D /* libSoundCloudUI.a */,
+				D59C5023175A16F10059D87D /* SoundCloudUI.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D59C5037175A1BE20059D87D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D59C5035175A1AAB0059D87D /* SoundCloud.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		D59C5038175A1BF60059D87D /* SC */ = {
+			isa = PBXGroup;
+			children = (
+				D5F60091175A2004000D537C /* RMPSCTracksViewController.h */,
+				D5F60092175A2004000D537C /* RMPSCTracksViewController.m */,
+				D5F60093175A2004000D537C /* RMPSCTracksViewController.xib */,
+			);
+			name = SC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,12 +368,100 @@
 			mainGroup = D59C4F3F1759FF260059D87D;
 			productRefGroup = D59C4F491759FF260059D87D /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = D59C4F92175A16A60059D87D /* Products */;
+					ProjectRef = D59C4F91175A16A60059D87D /* JSONKit.xcodeproj */;
+				},
+				{
+					ProductGroup = D59C4FE0175A16BA0059D87D /* Products */;
+					ProjectRef = D59C4FDF175A16BA0059D87D /* OAuth2Client.xcodeproj */;
+				},
+				{
+					ProductGroup = D59C5016175A16CC0059D87D /* Products */;
+					ProjectRef = D59C5015175A16CC0059D87D /* OHAttributedLabel.xcodeproj */;
+				},
+				{
+					ProductGroup = D59C4F89175A16960059D87D /* Products */;
+					ProjectRef = D59C4F88175A16960059D87D /* SoundCloudAPI.xcodeproj */;
+				},
+				{
+					ProductGroup = D59C501C175A16F00059D87D /* Products */;
+					ProjectRef = D59C501B175A16F00059D87D /* SoundCloudUI.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				D59C4F471759FF260059D87D /* RhythmMoodPic */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		D59C4F8E175A16970059D87D /* SoundCloudAPI.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SoundCloudAPI.framework;
+			remoteRef = D59C4F8D175A16970059D87D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D59C4F90175A16970059D87D /* libSoundCloudAPI.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSoundCloudAPI.a;
+			remoteRef = D59C4F8F175A16970059D87D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D59C4F97175A16A70059D87D /* libJSONKit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libJSONKit.a;
+			remoteRef = D59C4F96175A16A70059D87D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D59C4F99175A16A70059D87D /* JSONKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = JSONKit.framework;
+			remoteRef = D59C4F98175A16A70059D87D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D59C4FE5175A16BB0059D87D /* OAuth2Client.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = OAuth2Client.framework;
+			remoteRef = D59C4FE4175A16BB0059D87D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D59C4FE7175A16BB0059D87D /* libOAuth2Client.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libOAuth2Client.a;
+			remoteRef = D59C4FE6175A16BB0059D87D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D59C501A175A16CD0059D87D /* libOHAttributedLabel.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libOHAttributedLabel.a;
+			remoteRef = D59C5019175A16CD0059D87D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D59C5021175A16F10059D87D /* libSoundCloudUI.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSoundCloudUI.a;
+			remoteRef = D59C5020175A16F10059D87D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D59C5023175A16F10059D87D /* SoundCloudUI.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SoundCloudUI.framework;
+			remoteRef = D59C5022175A16F10059D87D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		D59C4F461759FF260059D87D /* Resources */ = {
@@ -205,6 +474,8 @@
 				D59C4F621759FF260059D87D /* Default-568h@2x.png in Resources */,
 				D59C4F681759FF260059D87D /* RMPViewController.xib in Resources */,
 				D59C4F87175A0DED0059D87D /* sample.mp3 in Resources */,
+				D59C5036175A1AAB0059D87D /* SoundCloud.bundle in Resources */,
+				D5F60095175A2004000D537C /* RMPSCTracksViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,6 +492,7 @@
 				D59C4F581759FF260059D87D /* main.m in Sources */,
 				D59C4F5C1759FF260059D87D /* RMPAppDelegate.m in Sources */,
 				D59C4F651759FF260059D87D /* RMPViewController.m in Sources */,
+				D5F60094175A2004000D537C /* RMPSCTracksViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,7 +579,12 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RhythmMoodPic/RhythmMoodPic-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$PROJECT_DIR/**";
 				INFOPLIST_FILE = "RhythmMoodPic/RhythmMoodPic-Info.plist";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -318,7 +595,12 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RhythmMoodPic/RhythmMoodPic-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$PROJECT_DIR/**";
 				INFOPLIST_FILE = "RhythmMoodPic/RhythmMoodPic-Info.plist";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -343,6 +625,7 @@
 				D59C4F6D1759FF260059D87D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

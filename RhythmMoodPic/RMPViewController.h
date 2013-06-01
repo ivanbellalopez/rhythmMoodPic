@@ -15,4 +15,6 @@
 @property (nonatomic, strong) WaveSampleProvider *wsp;
 @property (nonatomic, strong) AVPlayer *player;
 
+@property (nonatomic, strong) UITableView *tracksTableView;
+
 @end
