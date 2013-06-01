@@ -6,10 +6,11 @@
 //  Copyright (c) 2013 eyeem. All rights reserved.
 //
 
-#import "RMPViewController.h"
+#import "RMPSCViewController.h"
 #import "WaveSampleProvider.h"
 #import "SCUI.h"
-#import "RMPSCTracksViewController.h"
+#import "RMPEYELoginViewController.h"
+#import "RMPAppController.h"
 
 #define RMP_SC_ClientId @"7dd1653e7cafef2a2a888cf703dabf18"
 #define RMP_SC_ClientSecret @"5419bf2380c9ecc75a58a9475ac6dbde"
@@ -17,11 +18,11 @@
 #define RMP_EYE_ClientId @"Jh130fmdwfg07OftEf0j0BdKdxrQ12hy"
 #define RMP_EYE_ClientSecret @"1ugKn4ehItE3BjG2od8HgPhr4jeiiiqz"
 
-@interface RMPViewController ()
+@interface RMPSCViewController ()
 
 @end
 
-@implementation RMPViewController
+@implementation RMPSCViewController
 
 - (void)viewDidLoad
 {
@@ -98,16 +99,18 @@
 											 options:0
 											 error:&jsonError];
         if (!jsonError && [jsonResponse isKindOfClass:[NSArray class]]) {
-            RMPSCTracksViewController *trackListVC;
-            trackListVC = [[RMPSCTracksViewController alloc] initWithNibName:@"RMPSCTracksViewController" bundle:nil];
-			[[NSUserDefaults standardUserDefaults] setObject:[NSArray arrayWithArray:(NSArray *)jsonResponse] forKey:@"SCTracks"];
-            trackListVC.tracks = (NSArray *)jsonResponse;
-            [self.navigationController presentViewController:trackListVC animated:YES completion:nil];
+            RMPEYELoginViewController *eyeVC;
+            eyeVC = [[RMPEYELoginViewController alloc] initWithNibName:@"RMPEYELoginViewController" bundle:nil];
+//			[[NSUserDefaults standardUserDefaults] setObject:[NSArray arrayWithArray:(NSArray *)jsonResponse] forKey:@"SCTracks"];
+			[RMPAppController sharedClient].tracks = (NSArray *)jsonResponse;
+            [self.navigationController pushViewController:eyeVC animated:YES];
         } else {
-			RMPSCTracksViewController *trackListVC;
-            trackListVC = [[RMPSCTracksViewController alloc] initWithNibName:@"RMPSCTracksViewController" bundle:nil];
-            trackListVC.tracks = [[NSUserDefaults standardUserDefaults] objectForKey:@"SCTracks"];
-			[self.navigationController presentViewController:trackListVC animated:YES completion:nil];
+			RMPEYELoginViewController *eyeVC;
+            eyeVC = [[RMPEYELoginViewController alloc] initWithNibName:@"RMPEYELoginViewController" bundle:nil];
+//            eyeVC.tracks = [[NSUserDefaults standardUserDefaults] objectForKey:@"SCTracks"];
+			[RMPAppController sharedClient].tracks = (NSArray *)jsonResponse;
+
+			[self.navigationController pushViewController:eyeVC animated:YES];
 		}
     };
 	

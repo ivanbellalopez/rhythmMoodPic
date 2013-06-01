@@ -8,8 +8,8 @@
 
 #import "RMPAppDelegate.h"
 
-#import "RMPViewController.h"
-#import "RMPLoginViewController.h"
+#import "RMPSCViewController.h"
+#import "RMPEYELoginViewController.h"
 
 @implementation RMPAppDelegate
 
@@ -17,11 +17,11 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-//	self.viewController = [[RMPViewController alloc] initWithNibName:@"RMPViewController" bundle:nil];
+	self.viewController = [[RMPSCViewController alloc] initWithNibName:@"RMPViewController" bundle:nil];
 	
-	RMPLoginViewController *viewController = [[RMPLoginViewController alloc] initWithNibName:@"RMPLoginViewController" bundle:nil];
+	RMPEYELoginViewController *viewController = [[RMPEYELoginViewController alloc] initWithNibName:@"RMPLoginViewController" bundle:nil];
 
-	self.navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
+	self.navigationController = [[UINavigationController alloc] initWithRootViewController:self.viewController];
 
 	self.window.rootViewController = self.navigationController;
     [self.window makeKeyAndVisible];

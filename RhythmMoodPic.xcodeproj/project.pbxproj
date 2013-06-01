@@ -16,8 +16,8 @@
 		D59C4F5E1759FF260059D87D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = D59C4F5D1759FF260059D87D /* Default.png */; };
 		D59C4F601759FF260059D87D /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D59C4F5F1759FF260059D87D /* Default@2x.png */; };
 		D59C4F621759FF260059D87D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D59C4F611759FF260059D87D /* Default-568h@2x.png */; };
-		D59C4F651759FF260059D87D /* RMPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D59C4F641759FF260059D87D /* RMPViewController.m */; };
-		D59C4F681759FF260059D87D /* RMPViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D59C4F661759FF260059D87D /* RMPViewController.xib */; };
+		D59C4F651759FF260059D87D /* RMPSCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D59C4F641759FF260059D87D /* RMPSCViewController.m */; };
+		D59C4F681759FF260059D87D /* RMPSCViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D59C4F661759FF260059D87D /* RMPSCViewController.xib */; };
 		D59C4F75175A09070059D87D /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D59C4F74175A09070059D87D /* CoreAudio.framework */; };
 		D59C4F77175A09840059D87D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D59C4F76175A09840059D87D /* AudioToolbox.framework */; };
 		D59C4F79175A09C80059D87D /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D59C4F78175A09C80059D87D /* CoreMedia.framework */; };
@@ -39,11 +39,14 @@
 		D59C5033175A19F00059D87D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D59C502D175A19F00059D87D /* QuartzCore.framework */; };
 		D59C5034175A19F00059D87D /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D59C502E175A19F00059D87D /* Security.framework */; };
 		D59C5036175A1AAB0059D87D /* SoundCloud.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D59C5035175A1AAB0059D87D /* SoundCloud.bundle */; };
+		D5C50917175A5E780073DD3C /* RMPAppController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5C50916175A5E780073DD3C /* RMPAppController.m */; };
+		D5C50923175A60200073DD3C /* RMPMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5C50922175A60200073DD3C /* RMPMenuViewController.m */; };
+		D5C50926175A6AA80073DD3C /* RMPAnalyzerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5C50925175A6AA70073DD3C /* RMPAnalyzerViewController.m */; };
 		D5F60094175A2004000D537C /* RMPSCTracksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5F60092175A2004000D537C /* RMPSCTracksViewController.m */; };
 		D5F60095175A2004000D537C /* RMPSCTracksViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5F60093175A2004000D537C /* RMPSCTracksViewController.xib */; };
 		D5F600A5175A3DAF000D537C /* XBOAuthWebViewController.m.OLD in Sources */ = {isa = PBXBuildFile; fileRef = D5F600A4175A3DAF000D537C /* XBOAuthWebViewController.m.OLD */; };
-		D5F600B2175A3F10000D537C /* RMPLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5F600B0175A3F10000D537C /* RMPLoginViewController.m */; };
-		D5F600B3175A3F10000D537C /* RMPLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5F600B1175A3F10000D537C /* RMPLoginViewController.xib */; };
+		D5F600B2175A3F10000D537C /* RMPEYELoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5F600B0175A3F10000D537C /* RMPEYELoginViewController.m */; };
+		D5F600B3175A3F10000D537C /* RMPEYELoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5F600B1175A3F10000D537C /* RMPEYELoginViewController.xib */; };
 		D5F600C8175A41A7000D537C /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = D5F600B6175A41A7000D537C /* AFHTTPClient.m */; };
 		D5F600C9175A41A7000D537C /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = D5F600B8175A41A7000D537C /* AFHTTPRequestOperation.m */; };
 		D5F600CA175A41A7000D537C /* AFImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = D5F600BA175A41A7000D537C /* AFImageRequestOperation.m */; };
@@ -135,9 +138,9 @@
 		D59C4F5D1759FF260059D87D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		D59C4F5F1759FF260059D87D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		D59C4F611759FF260059D87D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		D59C4F631759FF260059D87D /* RMPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RMPViewController.h; sourceTree = "<group>"; };
-		D59C4F641759FF260059D87D /* RMPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RMPViewController.m; sourceTree = "<group>"; };
-		D59C4F671759FF260059D87D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RMPViewController.xib; sourceTree = "<group>"; };
+		D59C4F631759FF260059D87D /* RMPSCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RMPSCViewController.h; sourceTree = "<group>"; };
+		D59C4F641759FF260059D87D /* RMPSCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RMPSCViewController.m; sourceTree = "<group>"; };
+		D59C4F671759FF260059D87D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RMPSCViewController.xib; sourceTree = "<group>"; };
 		D59C4F6F175A02E40059D87D /* WaveSampleProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WaveSampleProvider.h; sourceTree = "<group>"; };
 		D59C4F70175A02E40059D87D /* WaveSampleProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WaveSampleProvider.m; sourceTree = "<group>"; };
 		D59C4F71175A02E40059D87D /* WaveSampleProviderDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WaveSampleProviderDelegate.h; sourceTree = "<group>"; };
@@ -159,14 +162,20 @@
 		D59C502D175A19F00059D87D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		D59C502E175A19F00059D87D /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		D59C5035175A1AAB0059D87D /* SoundCloud.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = SoundCloud.bundle; path = submodules/CocoaSoundCloudUI/SoundCloud.bundle; sourceTree = "<group>"; };
+		D5C50915175A5E780073DD3C /* RMPAppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMPAppController.h; sourceTree = "<group>"; };
+		D5C50916175A5E780073DD3C /* RMPAppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMPAppController.m; sourceTree = "<group>"; };
+		D5C50921175A60200073DD3C /* RMPMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMPMenuViewController.h; sourceTree = "<group>"; };
+		D5C50922175A60200073DD3C /* RMPMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMPMenuViewController.m; sourceTree = "<group>"; };
+		D5C50924175A6AA70073DD3C /* RMPAnalyzerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMPAnalyzerViewController.h; sourceTree = "<group>"; };
+		D5C50925175A6AA70073DD3C /* RMPAnalyzerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMPAnalyzerViewController.m; sourceTree = "<group>"; };
 		D5F60091175A2004000D537C /* RMPSCTracksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMPSCTracksViewController.h; sourceTree = "<group>"; };
 		D5F60092175A2004000D537C /* RMPSCTracksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMPSCTracksViewController.m; sourceTree = "<group>"; };
 		D5F60093175A2004000D537C /* RMPSCTracksViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RMPSCTracksViewController.xib; sourceTree = "<group>"; };
 		D5F600A3175A3DAF000D537C /* XBOAuthWebViewController.h.OLD */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = XBOAuthWebViewController.h.OLD; sourceTree = "<group>"; };
 		D5F600A4175A3DAF000D537C /* XBOAuthWebViewController.m.OLD */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = XBOAuthWebViewController.m.OLD; sourceTree = "<group>"; };
-		D5F600AF175A3F10000D537C /* RMPLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMPLoginViewController.h; sourceTree = "<group>"; };
-		D5F600B0175A3F10000D537C /* RMPLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMPLoginViewController.m; sourceTree = "<group>"; };
-		D5F600B1175A3F10000D537C /* RMPLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RMPLoginViewController.xib; sourceTree = "<group>"; };
+		D5F600AF175A3F10000D537C /* RMPEYELoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMPEYELoginViewController.h; sourceTree = "<group>"; };
+		D5F600B0175A3F10000D537C /* RMPEYELoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMPEYELoginViewController.m; sourceTree = "<group>"; };
+		D5F600B1175A3F10000D537C /* RMPEYELoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RMPEYELoginViewController.xib; sourceTree = "<group>"; };
 		D5F600B5175A41A7000D537C /* AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPClient.h; sourceTree = "<group>"; };
 		D5F600B6175A41A7000D537C /* AFHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPClient.m; sourceTree = "<group>"; };
 		D5F600B7175A41A7000D537C /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
@@ -272,13 +281,19 @@
 				D5F600A4175A3DAF000D537C /* XBOAuthWebViewController.m.OLD */,
 				D59C4F5A1759FF260059D87D /* RMPAppDelegate.h */,
 				D59C4F5B1759FF260059D87D /* RMPAppDelegate.m */,
-				D59C4F631759FF260059D87D /* RMPViewController.h */,
-				D59C4F641759FF260059D87D /* RMPViewController.m */,
-				D5F600AF175A3F10000D537C /* RMPLoginViewController.h */,
-				D5F600B0175A3F10000D537C /* RMPLoginViewController.m */,
-				D5F600B1175A3F10000D537C /* RMPLoginViewController.xib */,
-				D59C4F661759FF260059D87D /* RMPViewController.xib */,
+				D5C50921175A60200073DD3C /* RMPMenuViewController.h */,
+				D5C50922175A60200073DD3C /* RMPMenuViewController.m */,
+				D5C50924175A6AA70073DD3C /* RMPAnalyzerViewController.h */,
+				D5C50925175A6AA70073DD3C /* RMPAnalyzerViewController.m */,
+				D59C4F631759FF260059D87D /* RMPSCViewController.h */,
+				D59C4F641759FF260059D87D /* RMPSCViewController.m */,
+				D5F600AF175A3F10000D537C /* RMPEYELoginViewController.h */,
+				D5F600B0175A3F10000D537C /* RMPEYELoginViewController.m */,
+				D5F600B1175A3F10000D537C /* RMPEYELoginViewController.xib */,
+				D59C4F661759FF260059D87D /* RMPSCViewController.xib */,
 				D59C4F521759FF260059D87D /* Supporting Files */,
+				D5C50915175A5E780073DD3C /* RMPAppController.h */,
+				D5C50916175A5E780073DD3C /* RMPAppController.m */,
 			);
 			path = RhythmMoodPic;
 			sourceTree = "<group>";
@@ -541,11 +556,11 @@
 				D59C4F5E1759FF260059D87D /* Default.png in Resources */,
 				D59C4F601759FF260059D87D /* Default@2x.png in Resources */,
 				D59C4F621759FF260059D87D /* Default-568h@2x.png in Resources */,
-				D59C4F681759FF260059D87D /* RMPViewController.xib in Resources */,
+				D59C4F681759FF260059D87D /* RMPSCViewController.xib in Resources */,
 				D59C4F87175A0DED0059D87D /* sample.mp3 in Resources */,
 				D59C5036175A1AAB0059D87D /* SoundCloud.bundle in Resources */,
 				D5F60095175A2004000D537C /* RMPSCTracksViewController.xib in Resources */,
-				D5F600B3175A3F10000D537C /* RMPLoginViewController.xib in Resources */,
+				D5F600B3175A3F10000D537C /* RMPEYELoginViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -561,10 +576,10 @@
 				D59C4F80175A0D820059D87D /* WaveSampleProviderDelegate.h in Sources */,
 				D59C4F581759FF260059D87D /* main.m in Sources */,
 				D59C4F5C1759FF260059D87D /* RMPAppDelegate.m in Sources */,
-				D59C4F651759FF260059D87D /* RMPViewController.m in Sources */,
+				D59C4F651759FF260059D87D /* RMPSCViewController.m in Sources */,
 				D5F60094175A2004000D537C /* RMPSCTracksViewController.m in Sources */,
 				D5F600A5175A3DAF000D537C /* XBOAuthWebViewController.m.OLD in Sources */,
-				D5F600B2175A3F10000D537C /* RMPLoginViewController.m in Sources */,
+				D5F600B2175A3F10000D537C /* RMPEYELoginViewController.m in Sources */,
 				D5F600C8175A41A7000D537C /* AFHTTPClient.m in Sources */,
 				D5F600C9175A41A7000D537C /* AFHTTPRequestOperation.m in Sources */,
 				D5F600CA175A41A7000D537C /* AFImageRequestOperation.m in Sources */,
@@ -574,6 +589,9 @@
 				D5F600CE175A41A7000D537C /* AFURLConnectionOperation.m in Sources */,
 				D5F600CF175A41A7000D537C /* AFXMLRequestOperation.m in Sources */,
 				D5F600D0175A41A7000D537C /* UIImageView+AFNetworking.m in Sources */,
+				D5C50917175A5E780073DD3C /* RMPAppController.m in Sources */,
+				D5C50923175A60200073DD3C /* RMPMenuViewController.m in Sources */,
+				D5C50926175A6AA80073DD3C /* RMPAnalyzerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -588,12 +606,12 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		D59C4F661759FF260059D87D /* RMPViewController.xib */ = {
+		D59C4F661759FF260059D87D /* RMPSCViewController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				D59C4F671759FF260059D87D /* en */,
 			);
-			name = RMPViewController.xib;
+			name = RMPSCViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

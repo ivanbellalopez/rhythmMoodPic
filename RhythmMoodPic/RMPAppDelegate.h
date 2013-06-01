@@ -8,12 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@class RMPViewController;
+@class RMPSCViewController;
 
 @interface RMPAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 @property (strong, nonatomic) UINavigationController *navigationController;
-@property (strong, nonatomic) RMPViewController *viewController;
+@property (strong, nonatomic) RMPSCViewController *viewController;
 
 @end

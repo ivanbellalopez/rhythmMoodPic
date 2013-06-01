@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RMPLoginViewController : UIViewController
+@interface RMPEYELoginViewController : UIViewController
 
 @property (nonatomic, strong) IBOutlet UITextField *loginField;
 @property (nonatomic, strong) IBOutlet UITextField *pwdField;
