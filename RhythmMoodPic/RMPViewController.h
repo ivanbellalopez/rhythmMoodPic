@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#include <AVFoundation/AVFoundation.h>
+#import "WaveSampleProvider.h"
 
-@interface RMPViewController : UIViewController
+@interface RMPViewController : UIViewController <WaveSampleProviderDelegate>
+
+@property (nonatomic, strong) WaveSampleProvider *wsp;
+@property (nonatomic, strong) AVPlayer *player;
 
 @end

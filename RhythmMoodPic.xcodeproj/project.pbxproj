@@ -18,6 +18,15 @@
 		D59C4F621759FF260059D87D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D59C4F611759FF260059D87D /* Default-568h@2x.png */; };
 		D59C4F651759FF260059D87D /* RMPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D59C4F641759FF260059D87D /* RMPViewController.m */; };
 		D59C4F681759FF260059D87D /* RMPViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D59C4F661759FF260059D87D /* RMPViewController.xib */; };
+		D59C4F75175A09070059D87D /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D59C4F74175A09070059D87D /* CoreAudio.framework */; };
+		D59C4F77175A09840059D87D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D59C4F76175A09840059D87D /* AudioToolbox.framework */; };
+		D59C4F79175A09C80059D87D /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D59C4F78175A09C80059D87D /* CoreMedia.framework */; };
+		D59C4F7B175A0AC70059D87D /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D59C4F7A175A0AC70059D87D /* MediaPlayer.framework */; };
+		D59C4F7D175A0CD90059D87D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D59C4F7C175A0CD80059D87D /* AVFoundation.framework */; };
+		D59C4F7E175A0D820059D87D /* WaveSampleProvider.h in Sources */ = {isa = PBXBuildFile; fileRef = D59C4F6F175A02E40059D87D /* WaveSampleProvider.h */; };
+		D59C4F7F175A0D820059D87D /* WaveSampleProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = D59C4F70175A02E40059D87D /* WaveSampleProvider.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D59C4F80175A0D820059D87D /* WaveSampleProviderDelegate.h in Sources */ = {isa = PBXBuildFile; fileRef = D59C4F71175A02E40059D87D /* WaveSampleProviderDelegate.h */; };
+		D59C4F87175A0DED0059D87D /* sample.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D59C4F86175A0DED0059D87D /* sample.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +46,15 @@
 		D59C4F631759FF260059D87D /* RMPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RMPViewController.h; sourceTree = "<group>"; };
 		D59C4F641759FF260059D87D /* RMPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RMPViewController.m; sourceTree = "<group>"; };
 		D59C4F671759FF260059D87D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RMPViewController.xib; sourceTree = "<group>"; };
+		D59C4F6F175A02E40059D87D /* WaveSampleProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WaveSampleProvider.h; sourceTree = "<group>"; };
+		D59C4F70175A02E40059D87D /* WaveSampleProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WaveSampleProvider.m; sourceTree = "<group>"; };
+		D59C4F71175A02E40059D87D /* WaveSampleProviderDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WaveSampleProviderDelegate.h; sourceTree = "<group>"; };
+		D59C4F74175A09070059D87D /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		D59C4F76175A09840059D87D /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		D59C4F78175A09C80059D87D /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		D59C4F7A175A0AC70059D87D /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		D59C4F7C175A0CD80059D87D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		D59C4F86175A0DED0059D87D /* sample.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sample.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +62,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D59C4F7D175A0CD90059D87D /* AVFoundation.framework in Frameworks */,
+				D59C4F7B175A0AC70059D87D /* MediaPlayer.framework in Frameworks */,
+				D59C4F79175A09C80059D87D /* CoreMedia.framework in Frameworks */,
+				D59C4F77175A09840059D87D /* AudioToolbox.framework in Frameworks */,
+				D59C4F75175A09070059D87D /* CoreAudio.framework in Frameworks */,
 				D59C4F4C1759FF260059D87D /* UIKit.framework in Frameworks */,
 				D59C4F4E1759FF260059D87D /* Foundation.framework in Frameworks */,
 				D59C4F501759FF260059D87D /* CoreGraphics.framework in Frameworks */,
@@ -73,6 +96,11 @@
 		D59C4F4A1759FF260059D87D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D59C4F7C175A0CD80059D87D /* AVFoundation.framework */,
+				D59C4F7A175A0AC70059D87D /* MediaPlayer.framework */,
+				D59C4F78175A09C80059D87D /* CoreMedia.framework */,
+				D59C4F76175A09840059D87D /* AudioToolbox.framework */,
+				D59C4F74175A09070059D87D /* CoreAudio.framework */,
 				D59C4F4B1759FF260059D87D /* UIKit.framework */,
 				D59C4F4D1759FF260059D87D /* Foundation.framework */,
 				D59C4F4F1759FF260059D87D /* CoreGraphics.framework */,
@@ -83,6 +111,7 @@
 		D59C4F511759FF260059D87D /* RhythmMoodPic */ = {
 			isa = PBXGroup;
 			children = (
+				D59C4F6E175A02D40059D87D /* Waveform */,
 				D59C4F5A1759FF260059D87D /* RMPAppDelegate.h */,
 				D59C4F5B1759FF260059D87D /* RMPAppDelegate.m */,
 				D59C4F631759FF260059D87D /* RMPViewController.h */,
@@ -96,6 +125,7 @@
 		D59C4F521759FF260059D87D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D59C4F86175A0DED0059D87D /* sample.mp3 */,
 				D59C4F531759FF260059D87D /* RhythmMoodPic-Info.plist */,
 				D59C4F541759FF260059D87D /* InfoPlist.strings */,
 				D59C4F571759FF260059D87D /* main.m */,
@@ -105,6 +135,16 @@
 				D59C4F611759FF260059D87D /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D59C4F6E175A02D40059D87D /* Waveform */ = {
+			isa = PBXGroup;
+			children = (
+				D59C4F6F175A02E40059D87D /* WaveSampleProvider.h */,
+				D59C4F70175A02E40059D87D /* WaveSampleProvider.m */,
+				D59C4F71175A02E40059D87D /* WaveSampleProviderDelegate.h */,
+			);
+			name = Waveform;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +204,7 @@
 				D59C4F601759FF260059D87D /* Default@2x.png in Resources */,
 				D59C4F621759FF260059D87D /* Default-568h@2x.png in Resources */,
 				D59C4F681759FF260059D87D /* RMPViewController.xib in Resources */,
+				D59C4F87175A0DED0059D87D /* sample.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,6 +215,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D59C4F7E175A0D820059D87D /* WaveSampleProvider.h in Sources */,
+				D59C4F7F175A0D820059D87D /* WaveSampleProvider.m in Sources */,
+				D59C4F80175A0D820059D87D /* WaveSampleProviderDelegate.h in Sources */,
 				D59C4F581759FF260059D87D /* main.m in Sources */,
 				D59C4F5C1759FF260059D87D /* RMPAppDelegate.m in Sources */,
 				D59C4F651759FF260059D87D /* RMPViewController.m in Sources */,
