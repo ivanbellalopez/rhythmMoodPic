@@ -13,3 +13,6 @@
 [submodule "CocoaSoundCloudUI"]
 	path = CocoaSoundCloudUI
 	url = git://github.com/soundcloud/CocoaSoundCloudUI.git
+[submodule "AFNetworking"]
+	path = AFNetworking
+	url = https://github.com/AFNetworking/AFNetworking.git

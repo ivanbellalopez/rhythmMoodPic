@@ -14,6 +14,9 @@
 #define RMP_SC_ClientId @"7dd1653e7cafef2a2a888cf703dabf18"
 #define RMP_SC_ClientSecret @"5419bf2380c9ecc75a58a9475ac6dbde"
 
+#define RMP_EYE_ClientId @"Jh130fmdwfg07OftEf0j0BdKdxrQ12hy"
+#define RMP_EYE_ClientSecret @"1ugKn4ehItE3BjG2od8HgPhr4jeiiiqz"
+
 @interface RMPViewController ()
 
 @end
@@ -24,11 +27,11 @@
 {
     [super viewDidLoad];
 	
-//	[self _initSC];
-//	
-//	[self _loginSC];
+	[self _initSC];
 	
-	[self _analyzeSong];
+	[self _loginSC];
+	
+//	[self _analyzeSong];
 	
 	// Do any additional setup after loading the view, typically from a nib.
 }
@@ -128,7 +131,6 @@
 	
 	NSString *filePath = [documentPath stringByAppendingPathComponent:@"audio.caf"];
 
-	NSString *path = [[NSBundle mainBundle] pathForResource:@"audio" ofType:@"caf"];
 	if([[NSFileManager defaultManager] fileExistsAtPath:filePath]) {
 		songURL = [NSURL fileURLWithPath:filePath];
 		
