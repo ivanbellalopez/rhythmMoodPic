@@ -23,6 +23,8 @@
 {
 	if (self = [super init]) {
 		self.photosArray = [[NSMutableArray alloc] initWithCapacity:0];
+		self.photosImagesArray = [[NSMutableArray alloc] initWithCapacity:0];
+		self.normalizedData = [[NSArray alloc] init];
 	}
 	return  self;
 }

@@ -7,6 +7,7 @@
 //
 
 #import "WaveSampleProvider.h"
+#import "RMPAppController.h"
 
 @interface WaveSampleProvider (Private)
 - (void) loadSample;
@@ -53,7 +54,7 @@
 	if(self) {
 		extAFNumChannels = 2;
 		[self status:LOADING message:@"Processing"];
-		binSize = 5;
+		binSize = 50;
 //		path = [[NSString stringWithString:thePath] retain];
 		audioURL = [theURL retain];//[[NSURL fileURLWithPath:path]retain];
 		title = [[theURL lastPathComponent] copy];// @"";//[[path lastPathComponent] copy];
@@ -176,7 +177,7 @@
 		return;
 	}
 
-	SInt64 NUM_FRAMES_PER_READ = 5*binSize;
+	SInt64 NUM_FRAMES_PER_READ = 500*binSize;
     float *audio[extAFNumChannels];
 	
     for (int i=0; i < extAFNumChannels; i++) {
@@ -206,7 +207,7 @@
         free(audio[i]);
     }
 	
-//	NSLog(@"Packets read : %d (%ld)",packetReads, sampleData.count);
+	NSLog(@"Packets read : %d (%ld)",packetReads, sampleData.count);
 	[self normalizeSample];
 	[self status:LOADED message:@"Sample data loaded"];
 }
@@ -229,8 +230,12 @@
 		if(val < 0.0) val = 0.0;
 		NSNumber *nval = [NSNumber numberWithFloat:val];
 		[normalizedData addObject:nval];
+	
 //		NSLog(@"normalizedData: %@", nval);
 	}
+	
+	[RMPAppController sharedClient].normalizedData = [normalizedData copy];
+	[normalizedData removeAllObjects];
 	[sampleData release];
 	sampleData = nil;
 }

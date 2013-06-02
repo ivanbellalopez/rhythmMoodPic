@@ -17,9 +17,7 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-	self.viewController = [[RMPSCViewController alloc] initWithNibName:@"RMPViewController" bundle:nil];
-	
-	RMPEYELoginViewController *viewController = [[RMPEYELoginViewController alloc] initWithNibName:@"RMPLoginViewController" bundle:nil];
+	self.viewController = [[RMPEYELoginViewController alloc] initWithNibName:@"RMPEYELoginViewController" bundle:nil];
 
 	self.navigationController = [[UINavigationController alloc] initWithRootViewController:self.viewController];
 

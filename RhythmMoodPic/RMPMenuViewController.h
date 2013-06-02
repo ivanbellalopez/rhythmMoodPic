@@ -11,11 +11,14 @@
 
 @interface RMPMenuViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
-@property (nonatomic, strong) UITableView *eyeemTV;
-@property (nonatomic, strong) UITableView *scTV;
+@property (nonatomic, strong) IBOutlet UITableView *eyeemTV;
+@property (nonatomic, strong) IBOutlet UITableView *scTV;
+@property (nonatomic, strong) IBOutlet UIActivityIndicatorView *spinner;
+@property (nonatomic, strong) IBOutlet UILabel *statusLabelPhotos;
+@property (nonatomic, strong) IBOutlet UILabel *statusLabelTrack;
 
 @property (nonatomic, strong) AVAudioPlayer *player;
 
-@property (nonatomic, strong) UIButton *continueButton;
+@property (nonatomic, strong) IBOutlet UIButton *continueButton;
 
 @end

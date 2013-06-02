@@ -7,10 +7,11 @@
 //
 
 #import "RMPSCViewController.h"
-#import "WaveSampleProvider.h"
 #import "SCUI.h"
 #import "RMPEYELoginViewController.h"
 #import "RMPAppController.h"
+#import "RMPMenuViewController.h"
+#import "AFJSONRequestOperation.h"
 
 #define RMP_SC_ClientId @"7dd1653e7cafef2a2a888cf703dabf18"
 #define RMP_SC_ClientSecret @"5419bf2380c9ecc75a58a9475ac6dbde"
@@ -27,13 +28,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	
-	[self _initSC];
-	
-	[self _loginSC];
-	
-//	[self _analyzeSong];
-	
+	[self.scButton addTarget:self action:@selector(_initSC) forControlEvents:UIControlEventTouchUpInside];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -43,12 +38,20 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+	[super viewWillAppear:animated];
+	[self _getUserInfo];
+}
+
 
 - (void)_initSC
 {
 	[SCSoundCloud setClientID:RMP_SC_ClientId
 					   secret:RMP_SC_ClientSecret
 				  redirectURL:[NSURL URLWithString:@"http://www.3lokoj.com"]];
+	
+	[self _loginSC];
 }
 
 
@@ -61,7 +64,8 @@
             NSLog(@"Error: %@", [error localizedDescription]);
         } else {
             NSLog(@"Done!");
-			[self performSelector:@selector(_getSCTracks) withObject:nil afterDelay:1.0];
+			RMPMenuViewController *menuVC = [[RMPMenuViewController alloc] init];
+			[self.navigationController pushViewController:menuVC animated:YES];
         }
     };
 	
@@ -77,123 +81,26 @@
 }
 
 
-- (void)_getSCTracks
+- (void)_getUserInfo
 {
-    SCAccount *account = [SCSoundCloud account];
-    if (account == nil) {
-        UIAlertView *alert = [[UIAlertView alloc]
-                              initWithTitle:@"Not Logged In"
-							  message:@"You must login first"
-							  delegate:nil
-							  cancelButtonTitle:@"OK"
-							  otherButtonTitles:nil];
-        [alert show];
-        return;
-    }
-	
-    SCRequestResponseHandler handler;
-    handler = ^(NSURLResponse *response, NSData *data, NSError *error) {
-        NSError *jsonError = nil;
-        NSJSONSerialization *jsonResponse = [NSJSONSerialization
-                                             JSONObjectWithData:data
-											 options:0
-											 error:&jsonError];
-        if (!jsonError && [jsonResponse isKindOfClass:[NSArray class]]) {
-            RMPEYELoginViewController *eyeVC;
-            eyeVC = [[RMPEYELoginViewController alloc] initWithNibName:@"RMPEYELoginViewController" bundle:nil];
-//			[[NSUserDefaults standardUserDefaults] setObject:[NSArray arrayWithArray:(NSArray *)jsonResponse] forKey:@"SCTracks"];
-			[RMPAppController sharedClient].tracks = (NSArray *)jsonResponse;
-            [self.navigationController pushViewController:eyeVC animated:YES];
-        } else {
-			RMPEYELoginViewController *eyeVC;
-            eyeVC = [[RMPEYELoginViewController alloc] initWithNibName:@"RMPEYELoginViewController" bundle:nil];
-//            eyeVC.tracks = [[NSUserDefaults standardUserDefaults] objectForKey:@"SCTracks"];
-			[RMPAppController sharedClient].tracks = (NSArray *)jsonResponse;
-
-			[self.navigationController pushViewController:eyeVC animated:YES];
-		}
-    };
-	
-    NSString *resourceURL = @"https://api.soundcloud.com/me/favorites.json";
-    [SCRequest performMethod:SCRequestMethodGET
-                  onResource:[NSURL URLWithString:resourceURL]
-             usingParameters:nil
-                 withAccount:account
-      sendingProgressHandler:nil
-             responseHandler:handler];
-}
-
-
-- (void)_analyzeSong
-{
-	NSURL *songURL = nil;
 	
 	
-	NSArray *searchPaths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-	NSString *documentPath = [searchPaths objectAtIndex:0];
+	NSString *url = [NSString stringWithFormat:@"http://www.eyeem.com/api/v2/users/me&access_token=%@", [RMPAppController sharedClient].accessToken];
 	
-	NSString *filePath = [documentPath stringByAppendingPathComponent:@"audio.caf"];
-
-	if([[NSFileManager defaultManager] fileExistsAtPath:filePath]) {
-		songURL = [NSURL fileURLWithPath:filePath];
+	NSURL *aUrl = [NSURL URLWithString:url];
+	NSURLRequest *aRequest = [NSURLRequest requestWithURL:aUrl];
+	
+	
+	AFJSONRequestOperation *operation = [AFJSONRequestOperation JSONRequestOperationWithRequest:aRequest success:^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON) {
+		NSLog(@"liked: %@", [JSON valueForKeyPath:@"likedAlbums"]);
+		NSString *userName = [[[JSON valueForKeyPath:@"user"] valueForKey:@"nickname"] capitalizedString];
+		self.name.text = [NSString stringWithFormat:@"HELLO %@", userName];
 		
-	} else {
-		UIAlertView *alert = [[UIAlertView alloc] initWithTitle: @"No Audio !"
-														message: @"You should add a sample.mp3 file to the project before test it."
-													   delegate: self
-											  cancelButtonTitle: @"OK"
-											  otherButtonTitles: nil];
-		[alert show];
-	}
-	
-	self.wsp = [[WaveSampleProvider alloc]initWithURL:songURL];
-	self.wsp.delegate = self;
-	[self.wsp createSampleData];
-}
-
-
-- (void)_startAudio
-{
-	id __weak weakSelf = self;
-	AVPlayer __weak *weakPlayer = self.player;
-	
-	if(self.wsp.status == LOADED) {
-		self.player = [[AVPlayer alloc] initWithURL:self.wsp.audioURL];
-		CMTime tm = CMTimeMakeWithSeconds(0.1, NSEC_PER_SEC);
-		[self.player addPeriodicTimeObserverForInterval:tm queue:dispatch_get_main_queue() usingBlock:^(CMTime time) {
-			Float64 duration = CMTimeGetSeconds(weakPlayer.currentItem.duration);
-			Float64 currentTime = CMTimeGetSeconds(weakPlayer.currentTime);
-			int dmin = duration / 60;
-			int dsec = duration - (dmin * 60);
-			int cmin = currentTime / 60;
-			int csec = currentTime - (cmin * 60);
-			if(currentTime > 0.0) {
-//				[weakSelf setTimeString:[NSString stringWithFormat:@"%02d:%02d/%02d:%02d",dmin,dsec,cmin,csec]];
-			}
-//			playProgress = currentTime/duration;
-//			[weakSelf setNeedsDisplay];
-		}];
-		[self.player play];
-	}
-}
-
-#pragma mark - WaveSampleProvider delegate
-
-
-- (void) sampleProcessed:(WaveSampleProvider *)provider
-{
-	if (provider.status == 1) {
-		NSLog(@"finish analyzing");
-		NSLog(@"data count: %i", [self.wsp.normalizedData count]);
-		[self _startAudio];
-	}
-}
-
-
-- (void) statusUpdated:(WaveSampleProvider *)provider
-{
+	} failure:nil];
 	
 	
+	[operation start];
 }
+
 
 @end

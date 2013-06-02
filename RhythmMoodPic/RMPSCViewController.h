@@ -7,14 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#include <AVFoundation/AVFoundation.h>
-#import "WaveSampleProvider.h"
 
-@interface RMPSCViewController : UIViewController <WaveSampleProviderDelegate>
+@interface RMPSCViewController : UIViewController
 
-@property (nonatomic, strong) WaveSampleProvider *wsp;
-@property (nonatomic, strong) AVPlayer *player;
-
-@property (nonatomic, strong) UITableView *tracksTableView;
+@property (nonatomic, strong) IBOutlet UIButton *scButton;
+@property (nonatomic, strong) IBOutlet UILabel *name;
 
 @end

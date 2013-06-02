@@ -7,7 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WaveSampleProvider.h"
+#include <AVFoundation/AVFoundation.h>
 
-@interface RMPAnalyzerViewController : UIViewController
+
+
+@interface RMPAnalyzerViewController : UIViewController <WaveSampleProviderDelegate>
+
+@property (nonatomic, strong) WaveSampleProvider *wsp;
+
+@property (nonatomic, strong) IBOutlet UIView *slideShowView;
+
+@property (nonatomic, strong) IBOutlet UIButton *playButton;
+
+@property (nonatomic, strong) IBOutlet UIImageView *imgView;
 
 @end
