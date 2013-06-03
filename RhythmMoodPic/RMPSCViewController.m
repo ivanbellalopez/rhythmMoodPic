@@ -92,7 +92,7 @@
 	
 	
 	AFJSONRequestOperation *operation = [AFJSONRequestOperation JSONRequestOperationWithRequest:aRequest success:^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON) {
-		NSLog(@"liked: %@", [JSON valueForKeyPath:@"likedAlbums"]);
+//		NSLog(@"liked: %@", [JSON valueForKeyPath:@"likedAlbums"]);
 		NSString *userName = [[[JSON valueForKeyPath:@"user"] valueForKey:@"nickname"] capitalizedString];
 		self.name.text = [NSString stringWithFormat:@"HELLO %@", userName];
 		

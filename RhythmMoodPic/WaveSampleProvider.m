@@ -125,7 +125,7 @@
 		CFDictionaryRef info = NULL;
 		error = AudioFileGetProperty(afid, kAudioFilePropertyInfoDictionary, &size, &info);
 		if ( error == noErr ) {
-			NSLog(@"file properties: %@", (NSDictionary *)info);
+//			NSLog(@"file properties: %@", (NSDictionary *)info);
 			NSDictionary *dict = (NSDictionary *)info;
 			NSString *idTitle = [dict valueForKey:@"title"];
 			NSString *idArtist = [dict valueForKey:@"artist"];
@@ -207,7 +207,7 @@
         free(audio[i]);
     }
 	
-	NSLog(@"Packets read : %d (%ld)",packetReads, sampleData.count);
+//	NSLog(@"Packets read : %d (%ld)",packetReads, sampleData.count);
 	[self normalizeSample];
 	[self status:LOADED message:@"Sample data loaded"];
 }

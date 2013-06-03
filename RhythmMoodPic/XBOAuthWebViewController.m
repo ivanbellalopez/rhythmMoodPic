@@ -137,12 +137,10 @@
 - (void)webViewDidFinishLoad:(UIWebView *)webView {
     [self.spinner stopAnimating];
     
-	
-	__weak id weakSelf = self;
-	NSString *code = @"";
+		NSString *code = @"";
 	
 	NSString *URLString = [[self.webView.request URL] absoluteString];
-	NSLog(@"--> %@", URLString);
+//	NSLog(@"--> %@", URLString);
 	code = [[URLString componentsSeparatedByString:@"="] lastObject];
 	
 	if ([code length] > 0 && [[[self.webView.request URL] host] isEqualToString:@"www.3lokoj.com"]) {
@@ -152,12 +150,12 @@
 		[self _dismissView];
 
 		AFJSONRequestOperation *operation = [AFJSONRequestOperation JSONRequestOperationWithRequest:request success:^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON) {
-			NSLog(@"response: %@",[JSON objectForKey:@"access_token"]);
+//			NSLog(@"response: %@",[JSON objectForKey:@"access_token"]);
 			[RMPAppController sharedClient].accessToken = [JSON objectForKey:@"access_token"];
 			
 			[[NSNotificationCenter defaultCenter] postNotificationName:@"accestoken_finished" object:nil];
 		} failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON) {
-			NSLog(@"error: %@", error);
+//			NSLog(@"error: %@", error);
 		}];
 		
 		[operation start];

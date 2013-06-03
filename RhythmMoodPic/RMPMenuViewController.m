@@ -63,7 +63,9 @@
 {
 	self.spinner.hidden = YES;
 
+	[[RMPAppController sharedClient].photosImagesArray removeAllObjects];
 	[[RMPAppController sharedClient].photosArray removeAllObjects];
+	
 	[self _getSCTracks];
 	[self _getFavAlbums];
 }
@@ -165,7 +167,7 @@
 				[[RMPAppController sharedClient].photosArray addObject:[[photoUrl componentsSeparatedByString:@"/"] lastObject]];
 			}
 			
-			NSLog(@"photothumbs: %i", [[RMPAppController sharedClient].photosArray count]);
+//			NSLog(@"photothumbs: %i", [[RMPAppController sharedClient].photosArray count]);
 			self.spinner.hidden = YES;
 			[self.spinner stopAnimating];
 			self.statusLabelPhotos.text = @"";
@@ -263,7 +265,7 @@
 	
 	
 	AFJSONRequestOperation *operation = [AFJSONRequestOperation JSONRequestOperationWithRequest:aRequest success:^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON) {
-		NSLog(@"liked: %@", [JSON valueForKeyPath:@"likedAlbums"]);
+//		NSLog(@"liked: %@", [JSON valueForKeyPath:@"likedAlbums"]);
 		[RMPAppController sharedClient].likedAlbums = [[JSON valueForKeyPath:@"likedAlbums"] objectForKey:@"items"];
 		
 		[self.eyeemTV reloadData];

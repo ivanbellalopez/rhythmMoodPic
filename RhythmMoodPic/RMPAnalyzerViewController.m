@@ -50,6 +50,10 @@
 	[self.slideShowView addGestureRecognizer:tapGR];
 	// Do any additional setup after loading the view.
 	
+	UISwipeGestureRecognizer *swipeGR = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(goBack)];
+	swipeGR.direction = UISwipeGestureRecognizerDirectionLeft | UISwipeGestureRecognizerDirectionRight;
+	[self.slideShowView addGestureRecognizer:swipeGR];
+	
 	self.loadingView.animationImages = @[[UIImage imageNamed:@"Loading_item_1.png"],
 									  [UIImage imageNamed:@"Loading_item_2.png"],
 									  [UIImage imageNamed:@"Loading_item_3.png"],
@@ -185,7 +189,7 @@
 			
 			AFImageRequestOperation *operation = [AFImageRequestOperation imageRequestOperationWithRequest:request success:^(UIImage *image) {
 				[[RMPAppController sharedClient].photosImagesArray addObject:image];
-				NSLog(@"saved images: %i", [[RMPAppController sharedClient].photosImagesArray count]);
+//				NSLog(@"saved images: %i", [[RMPAppController sharedClient].photosImagesArray count]);
 
 				if ([[RMPAppController sharedClient].photosImagesArray count] == [[RMPAppController sharedClient].photosArray count]) {
 					[self _analyzeSong];
@@ -207,7 +211,7 @@
 	Float64 timeDiff = fabsf(self.currentTime - currentTime);
 	self.normalizeValue = [[RMPAppController sharedClient].normalizedData objectAtIndex:self.normDataIdx];
 //	NSLog(@"normData: %f", [self.normalizeValue floatValue]);
-	NSLog(@"timeDiff: %lf", timeDiff);
+//	NSLog(@"timeDiff: %lf", timeDiff);
 	
 	if ([self _isGoingUp] && timeDiff > 0.1) {
 		self.imgView.image= [[RMPAppController sharedClient].photosImagesArray objectAtIndex:self.photoIdx];
@@ -256,6 +260,12 @@
 
 - (void)itemDidFinishPlaying
 {
+	[self.navigationController popViewControllerAnimated:YES];
+}
+
+- (void)goBack
+{
+	[self.player pause];
 	[self.navigationController popViewControllerAnimated:YES];
 }
 
