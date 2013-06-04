@@ -1,3 +1,18 @@
-[submodule "submodules"]
-	path = submodules
+[submodule "submodules/CocoaSoundCloudAPI"]
+	path = CocoaSoundCloudAPI
+	url = git://github.com/soundcloud/CocoaSoundCloudAPI.git
+[submodule "submodules/OAuth2Client"]
+	path = OAuth2Client
+	url = git://github.com/nxtbgthng/OAuth2Client.git
+[submodule "submodules/JSONKit"]
+	path = JSONKit
+	url = git://github.com/nxtbgthng/JSONKit.git
+[submodule "submodules/OHAttributedLabel"]
+	path = OHAttributedLabel
+	url = git://github.com/nxtbgthng/OHAttributedLabel.git
+[submodule "submodules/CocoaSoundCloudUI"]
+	path = CocoaSoundCloudUI
 	url = git://github.com/soundcloud/CocoaSoundCloudUI.git
+[submodule "submodules/AFNetworking"]
+	path = AFNetworking
+	url = https://github.com/AFNetworking/AFNetworking.git
