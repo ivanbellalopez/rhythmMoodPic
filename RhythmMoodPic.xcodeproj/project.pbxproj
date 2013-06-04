@@ -17,7 +17,6 @@
 		D59C4F601759FF260059D87D /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D59C4F5F1759FF260059D87D /* Default@2x.png */; };
 		D59C4F621759FF260059D87D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D59C4F611759FF260059D87D /* Default-568h@2x.png */; };
 		D59C4F651759FF260059D87D /* RMPSCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D59C4F641759FF260059D87D /* RMPSCViewController.m */; };
-		D59C4F681759FF260059D87D /* RMPSCViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D59C4F661759FF260059D87D /* RMPSCViewController.xib */; };
 		D59C4F75175A09070059D87D /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D59C4F74175A09070059D87D /* CoreAudio.framework */; };
 		D59C4F77175A09840059D87D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D59C4F76175A09840059D87D /* AudioToolbox.framework */; };
 		D59C4F79175A09C80059D87D /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D59C4F78175A09C80059D87D /* CoreMedia.framework */; };
@@ -38,6 +37,9 @@
 		D59C5033175A19F00059D87D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D59C502D175A19F00059D87D /* QuartzCore.framework */; };
 		D59C5034175A19F00059D87D /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D59C502E175A19F00059D87D /* Security.framework */; };
 		D59C5036175A1AAB0059D87D /* SoundCloud.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D59C5035175A1AAB0059D87D /* SoundCloud.bundle */; };
+		D5AF7177175E1EC90011D130 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5AF7176175E1EC90011D130 /* MobileCoreServices.framework */; };
+		D5AF7179175E1ECE0011D130 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5AF7178175E1ECE0011D130 /* SystemConfiguration.framework */; };
+		D5AF717D175E1FCB0011D130 /* XBOAuthWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5AF717C175E1FCB0011D130 /* XBOAuthWebViewController.m */; };
 		D5BA8BBA175B47CC009BD0ED /* Loading_item_1.png in Resources */ = {isa = PBXBuildFile; fileRef = D5BA8BB0175B47CC009BD0ED /* Loading_item_1.png */; };
 		D5BA8BBB175B47CC009BD0ED /* Loading_item_2.png in Resources */ = {isa = PBXBuildFile; fileRef = D5BA8BB1175B47CC009BD0ED /* Loading_item_2.png */; };
 		D5BA8BBC175B47CC009BD0ED /* Loading_item_3.png in Resources */ = {isa = PBXBuildFile; fileRef = D5BA8BB2175B47CC009BD0ED /* Loading_item_3.png */; };
@@ -48,10 +50,7 @@
 		D5BA8BC1175B47CC009BD0ED /* Loading_item_8.png in Resources */ = {isa = PBXBuildFile; fileRef = D5BA8BB7175B47CC009BD0ED /* Loading_item_8.png */; };
 		D5BA8BC2175B47CC009BD0ED /* Loading_item_9.png in Resources */ = {isa = PBXBuildFile; fileRef = D5BA8BB8175B47CC009BD0ED /* Loading_item_9.png */; };
 		D5BA8BC3175B47CC009BD0ED /* Loading_item_10.png in Resources */ = {isa = PBXBuildFile; fileRef = D5BA8BB9175B47CC009BD0ED /* Loading_item_10.png */; };
-		D5BA8BCF175B56B3009BD0ED /* App_Icon_57_57.png in Resources */ = {isa = PBXBuildFile; fileRef = D5BA8BCD175B56B3009BD0ED /* App_Icon_57_57.png */; };
-		D5BA8BD0175B56B3009BD0ED /* App_Icon_117_117.png in Resources */ = {isa = PBXBuildFile; fileRef = D5BA8BCE175B56B3009BD0ED /* App_Icon_117_117.png */; };
 		D5BA8BD2175B59A2009BD0ED /* App_Icon_57_57.png in Resources */ = {isa = PBXBuildFile; fileRef = D5BA8BD1175B59A1009BD0ED /* App_Icon_57_57.png */; };
-		D5BA8BD4175B5AA5009BD0ED /* App_Icon_114.png in Resources */ = {isa = PBXBuildFile; fileRef = D5BA8BD3175B5AA5009BD0ED /* App_Icon_114.png */; };
 		D5BA8BD6175B5AAA009BD0ED /* App_Icon_114.png in Resources */ = {isa = PBXBuildFile; fileRef = D5BA8BD5175B5AAA009BD0ED /* App_Icon_114.png */; };
 		D5C50917175A5E780073DD3C /* RMPAppController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5C50916175A5E780073DD3C /* RMPAppController.m */; };
 		D5C50923175A60200073DD3C /* RMPMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5C50922175A60200073DD3C /* RMPMenuViewController.m */; };
@@ -71,9 +70,6 @@
 		D5C5098F175B19CC0073DD3C /* RMPSCViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5C5098E175B19CC0073DD3C /* RMPSCViewController.xib */; };
 		D5C50991175B216D0073DD3C /* RMPMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5C50990175B216D0073DD3C /* RMPMenuViewController.xib */; };
 		D5C50993175B26E90073DD3C /* RMPAnalyzerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5C50992175B26E80073DD3C /* RMPAnalyzerViewController.xib */; };
-		D5F60094175A2004000D537C /* RMPSCTracksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5F60092175A2004000D537C /* RMPSCTracksViewController.m */; };
-		D5F60095175A2004000D537C /* RMPSCTracksViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5F60093175A2004000D537C /* RMPSCTracksViewController.xib */; };
-		D5F600A5175A3DAF000D537C /* XBOAuthWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5F600A4175A3DAF000D537C /* XBOAuthWebViewController.m */; };
 		D5F600B2175A3F10000D537C /* RMPEYELoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5F600B0175A3F10000D537C /* RMPEYELoginViewController.m */; };
 		D5F600B3175A3F10000D537C /* RMPEYELoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5F600B1175A3F10000D537C /* RMPEYELoginViewController.xib */; };
 		D5F600C8175A41A7000D537C /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = D5F600B6175A41A7000D537C /* AFHTTPClient.m */; };
@@ -169,7 +165,6 @@
 		D59C4F611759FF260059D87D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		D59C4F631759FF260059D87D /* RMPSCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RMPSCViewController.h; sourceTree = "<group>"; };
 		D59C4F641759FF260059D87D /* RMPSCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RMPSCViewController.m; sourceTree = "<group>"; };
-		D59C4F671759FF260059D87D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RMPSCViewController.xib; sourceTree = "<group>"; };
 		D59C4F6F175A02E40059D87D /* WaveSampleProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WaveSampleProvider.h; sourceTree = "<group>"; };
 		D59C4F70175A02E40059D87D /* WaveSampleProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WaveSampleProvider.m; sourceTree = "<group>"; };
 		D59C4F71175A02E40059D87D /* WaveSampleProviderDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WaveSampleProviderDelegate.h; sourceTree = "<group>"; };
@@ -190,6 +185,10 @@
 		D59C502D175A19F00059D87D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		D59C502E175A19F00059D87D /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		D59C5035175A1AAB0059D87D /* SoundCloud.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = SoundCloud.bundle; path = submodules/CocoaSoundCloudUI/SoundCloud.bundle; sourceTree = "<group>"; };
+		D5AF7176175E1EC90011D130 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		D5AF7178175E1ECE0011D130 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		D5AF717B175E1FCB0011D130 /* XBOAuthWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XBOAuthWebViewController.h; sourceTree = "<group>"; };
+		D5AF717C175E1FCB0011D130 /* XBOAuthWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XBOAuthWebViewController.m; sourceTree = "<group>"; };
 		D5BA8BB0175B47CC009BD0ED /* Loading_item_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Loading_item_1.png; path = RhythmMoodPic/Resources/Loading_item_1.png; sourceTree = "<group>"; };
 		D5BA8BB1175B47CC009BD0ED /* Loading_item_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Loading_item_2.png; path = RhythmMoodPic/Resources/Loading_item_2.png; sourceTree = "<group>"; };
 		D5BA8BB2175B47CC009BD0ED /* Loading_item_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Loading_item_3.png; path = RhythmMoodPic/Resources/Loading_item_3.png; sourceTree = "<group>"; };
@@ -200,10 +199,7 @@
 		D5BA8BB7175B47CC009BD0ED /* Loading_item_8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Loading_item_8.png; path = RhythmMoodPic/Resources/Loading_item_8.png; sourceTree = "<group>"; };
 		D5BA8BB8175B47CC009BD0ED /* Loading_item_9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Loading_item_9.png; path = RhythmMoodPic/Resources/Loading_item_9.png; sourceTree = "<group>"; };
 		D5BA8BB9175B47CC009BD0ED /* Loading_item_10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Loading_item_10.png; path = RhythmMoodPic/Resources/Loading_item_10.png; sourceTree = "<group>"; };
-		D5BA8BCD175B56B3009BD0ED /* App_Icon_57_57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = App_Icon_57_57.png; path = RhythmMoodPic/Resources/App_Icon_57_57.png; sourceTree = "<group>"; };
-		D5BA8BCE175B56B3009BD0ED /* App_Icon_117_117.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = App_Icon_117_117.png; path = RhythmMoodPic/Resources/App_Icon_117_117.png; sourceTree = "<group>"; };
 		D5BA8BD1175B59A1009BD0ED /* App_Icon_57_57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = App_Icon_57_57.png; sourceTree = "<group>"; };
-		D5BA8BD3175B5AA5009BD0ED /* App_Icon_114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = App_Icon_114.png; path = RhythmMoodPic/Resources/App_Icon_114.png; sourceTree = "<group>"; };
 		D5BA8BD5175B5AAA009BD0ED /* App_Icon_114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = App_Icon_114.png; sourceTree = "<group>"; };
 		D5C50915175A5E780073DD3C /* RMPAppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMPAppController.h; sourceTree = "<group>"; };
 		D5C50916175A5E780073DD3C /* RMPAppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMPAppController.m; sourceTree = "<group>"; };
@@ -226,11 +222,6 @@
 		D5C5098E175B19CC0073DD3C /* RMPSCViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RMPSCViewController.xib; sourceTree = "<group>"; };
 		D5C50990175B216D0073DD3C /* RMPMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RMPMenuViewController.xib; sourceTree = "<group>"; };
 		D5C50992175B26E80073DD3C /* RMPAnalyzerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RMPAnalyzerViewController.xib; sourceTree = "<group>"; };
-		D5F60091175A2004000D537C /* RMPSCTracksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMPSCTracksViewController.h; sourceTree = "<group>"; };
-		D5F60092175A2004000D537C /* RMPSCTracksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMPSCTracksViewController.m; sourceTree = "<group>"; };
-		D5F60093175A2004000D537C /* RMPSCTracksViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RMPSCTracksViewController.xib; sourceTree = "<group>"; };
-		D5F600A3175A3DAF000D537C /* XBOAuthWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XBOAuthWebViewController.h; sourceTree = "<group>"; };
-		D5F600A4175A3DAF000D537C /* XBOAuthWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XBOAuthWebViewController.m; sourceTree = "<group>"; };
 		D5F600AF175A3F10000D537C /* RMPEYELoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMPEYELoginViewController.h; sourceTree = "<group>"; };
 		D5F600B0175A3F10000D537C /* RMPEYELoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMPEYELoginViewController.m; sourceTree = "<group>"; };
 		D5F600B1175A3F10000D537C /* RMPEYELoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RMPEYELoginViewController.xib; sourceTree = "<group>"; };
@@ -260,6 +251,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5AF7179175E1ECE0011D130 /* SystemConfiguration.framework in Frameworks */,
+				D5AF7177175E1EC90011D130 /* MobileCoreServices.framework in Frameworks */,
 				D59C502F175A19F00059D87D /* AddressBook.framework in Frameworks */,
 				D59C5030175A19F00059D87D /* AddressBookUI.framework in Frameworks */,
 				D59C5031175A19F00059D87D /* CoreLocation.framework in Frameworks */,
@@ -290,12 +283,12 @@
 			children = (
 				D5BA8BD5175B5AAA009BD0ED /* App_Icon_114.png */,
 				D5BA8BD1175B59A1009BD0ED /* App_Icon_57_57.png */,
-				D5F600B4175A41A7000D537C /* AFNetworking */,
 				D59C501B175A16F00059D87D /* SoundCloudUI.xcodeproj */,
 				D59C5015175A16CC0059D87D /* OHAttributedLabel.xcodeproj */,
 				D59C4FDF175A16BA0059D87D /* OAuth2Client.xcodeproj */,
 				D59C4F91175A16A60059D87D /* JSONKit.xcodeproj */,
 				D59C4F88175A16960059D87D /* SoundCloudAPI.xcodeproj */,
+				D5F600B4175A41A7000D537C /* AFNetworking */,
 				D59C4F511759FF260059D87D /* RhythmMoodPic */,
 				D59C5037175A1BE20059D87D /* Resources */,
 				D59C4F4A1759FF260059D87D /* Frameworks */,
@@ -314,6 +307,8 @@
 		D59C4F4A1759FF260059D87D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D5AF7178175E1ECE0011D130 /* SystemConfiguration.framework */,
+				D5AF7176175E1EC90011D130 /* MobileCoreServices.framework */,
 				D59C5029175A19F00059D87D /* AddressBook.framework */,
 				D59C502A175A19F00059D87D /* AddressBookUI.framework */,
 				D59C502B175A19F00059D87D /* CoreLocation.framework */,
@@ -335,10 +330,16 @@
 		D59C4F511759FF260059D87D /* RhythmMoodPic */ = {
 			isa = PBXGroup;
 			children = (
-				D59C5038175A1BF60059D87D /* SC */,
-				D59C4F6E175A02D40059D87D /* Waveform */,
-				D5F600A3175A3DAF000D537C /* XBOAuthWebViewController.h */,
-				D5F600A4175A3DAF000D537C /* XBOAuthWebViewController.m */,
+				D5C50915175A5E780073DD3C /* RMPAppController.h */,
+				D5C50916175A5E780073DD3C /* RMPAppController.m */,
+				D5AF717B175E1FCB0011D130 /* XBOAuthWebViewController.h */,
+				D5AF717C175E1FCB0011D130 /* XBOAuthWebViewController.m */,
+				D59C4F631759FF260059D87D /* RMPSCViewController.h */,
+				D59C4F641759FF260059D87D /* RMPSCViewController.m */,
+				D5C5098E175B19CC0073DD3C /* RMPSCViewController.xib */,
+				D59C4F6F175A02E40059D87D /* WaveSampleProvider.h */,
+				D59C4F70175A02E40059D87D /* WaveSampleProvider.m */,
+				D59C4F71175A02E40059D87D /* WaveSampleProviderDelegate.h */,
 				D59C4F5A1759FF260059D87D /* RMPAppDelegate.h */,
 				D59C4F5B1759FF260059D87D /* RMPAppDelegate.m */,
 				D5C50921175A60200073DD3C /* RMPMenuViewController.h */,
@@ -347,16 +348,10 @@
 				D5C50924175A6AA70073DD3C /* RMPAnalyzerViewController.h */,
 				D5C50925175A6AA70073DD3C /* RMPAnalyzerViewController.m */,
 				D5C50992175B26E80073DD3C /* RMPAnalyzerViewController.xib */,
-				D59C4F631759FF260059D87D /* RMPSCViewController.h */,
-				D59C4F641759FF260059D87D /* RMPSCViewController.m */,
-				D5C5098E175B19CC0073DD3C /* RMPSCViewController.xib */,
 				D5F600AF175A3F10000D537C /* RMPEYELoginViewController.h */,
 				D5F600B0175A3F10000D537C /* RMPEYELoginViewController.m */,
 				D5F600B1175A3F10000D537C /* RMPEYELoginViewController.xib */,
-				D59C4F661759FF260059D87D /* RMPSCViewController.xib */,
 				D59C4F521759FF260059D87D /* Supporting Files */,
-				D5C50915175A5E780073DD3C /* RMPAppController.h */,
-				D5C50916175A5E780073DD3C /* RMPAppController.m */,
 			);
 			path = RhythmMoodPic;
 			sourceTree = "<group>";
@@ -373,16 +368,6 @@
 				D59C4F611759FF260059D87D /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		D59C4F6E175A02D40059D87D /* Waveform */ = {
-			isa = PBXGroup;
-			children = (
-				D59C4F6F175A02E40059D87D /* WaveSampleProvider.h */,
-				D59C4F70175A02E40059D87D /* WaveSampleProvider.m */,
-				D59C4F71175A02E40059D87D /* WaveSampleProviderDelegate.h */,
-			);
-			name = Waveform;
 			sourceTree = "<group>";
 		};
 		D59C4F89175A16960059D87D /* Products */ = {
@@ -433,9 +418,6 @@
 			isa = PBXGroup;
 			children = (
 				D5BA8BB0175B47CC009BD0ED /* Loading_item_1.png */,
-				D5BA8BCD175B56B3009BD0ED /* App_Icon_57_57.png */,
-				D5BA8BCE175B56B3009BD0ED /* App_Icon_117_117.png */,
-				D5BA8BD3175B5AA5009BD0ED /* App_Icon_114.png */,
 				D5BA8BB1175B47CC009BD0ED /* Loading_item_2.png */,
 				D5BA8BB2175B47CC009BD0ED /* Loading_item_3.png */,
 				D5BA8BB3175B47CC009BD0ED /* Loading_item_4.png */,
@@ -460,16 +442,6 @@
 				D59C5035175A1AAB0059D87D /* SoundCloud.bundle */,
 			);
 			name = Resources;
-			sourceTree = "<group>";
-		};
-		D59C5038175A1BF60059D87D /* SC */ = {
-			isa = PBXGroup;
-			children = (
-				D5F60091175A2004000D537C /* RMPSCTracksViewController.h */,
-				D5F60092175A2004000D537C /* RMPSCTracksViewController.m */,
-				D5F60093175A2004000D537C /* RMPSCTracksViewController.xib */,
-			);
-			name = SC;
 			sourceTree = "<group>";
 		};
 		D5F600B4175A41A7000D537C /* AFNetworking */ = {
@@ -643,9 +615,7 @@
 				D59C4F5E1759FF260059D87D /* Default.png in Resources */,
 				D59C4F601759FF260059D87D /* Default@2x.png in Resources */,
 				D59C4F621759FF260059D87D /* Default-568h@2x.png in Resources */,
-				D59C4F681759FF260059D87D /* RMPSCViewController.xib in Resources */,
 				D59C5036175A1AAB0059D87D /* SoundCloud.bundle in Resources */,
-				D5F60095175A2004000D537C /* RMPSCTracksViewController.xib in Resources */,
 				D5F600B3175A3F10000D537C /* RMPEYELoginViewController.xib in Resources */,
 				D5C5096F175AF0AC0073DD3C /* Background_3.png in Resources */,
 				D5C50971175AF0AC0073DD3C /* Background1.png in Resources */,
@@ -672,10 +642,7 @@
 				D5BA8BC1175B47CC009BD0ED /* Loading_item_8.png in Resources */,
 				D5BA8BC2175B47CC009BD0ED /* Loading_item_9.png in Resources */,
 				D5BA8BC3175B47CC009BD0ED /* Loading_item_10.png in Resources */,
-				D5BA8BCF175B56B3009BD0ED /* App_Icon_57_57.png in Resources */,
-				D5BA8BD0175B56B3009BD0ED /* App_Icon_117_117.png in Resources */,
 				D5BA8BD2175B59A2009BD0ED /* App_Icon_57_57.png in Resources */,
-				D5BA8BD4175B5AA5009BD0ED /* App_Icon_114.png in Resources */,
 				D5BA8BD6175B5AAA009BD0ED /* App_Icon_114.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -693,8 +660,6 @@
 				D59C4F581759FF260059D87D /* main.m in Sources */,
 				D59C4F5C1759FF260059D87D /* RMPAppDelegate.m in Sources */,
 				D59C4F651759FF260059D87D /* RMPSCViewController.m in Sources */,
-				D5F60094175A2004000D537C /* RMPSCTracksViewController.m in Sources */,
-				D5F600A5175A3DAF000D537C /* XBOAuthWebViewController.m in Sources */,
 				D5F600B2175A3F10000D537C /* RMPEYELoginViewController.m in Sources */,
 				D5F600C8175A41A7000D537C /* AFHTTPClient.m in Sources */,
 				D5F600C9175A41A7000D537C /* AFHTTPRequestOperation.m in Sources */,
@@ -708,6 +673,7 @@
 				D5C50917175A5E780073DD3C /* RMPAppController.m in Sources */,
 				D5C50923175A60200073DD3C /* RMPMenuViewController.m in Sources */,
 				D5C50926175A6AA80073DD3C /* RMPAnalyzerViewController.m in Sources */,
+				D5AF717D175E1FCB0011D130 /* XBOAuthWebViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -720,14 +686,6 @@
 				D59C4F551759FF260059D87D /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		D59C4F661759FF260059D87D /* RMPSCViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D59C4F671759FF260059D87D /* en */,
-			);
-			name = RMPSCViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
